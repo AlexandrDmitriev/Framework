@@ -1,0 +1,12 @@
+[submodule "Autoloader"]
+	path = Autoloader
+	url = git@github.com:AlexandrDmitriev/Autoloader.git
+[submodule "ServiceLocator"]
+	path = ServiceLocator
+	url = git@github.com:AlexandrDmitriev/ServiceLocator.git
+[submodule "ErrorHandler"]
+	path = ErrorHandler
+	url = git@github.com:AlexandrDmitriev/ErrorHandler.git
+[submodule "CoreInterfaces"]
+	path = CoreInterfaces
+	url = git@github.com:AlexandrDmitriev/CoreInterfaces.git
