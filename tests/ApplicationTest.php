@@ -2,9 +2,11 @@
 
 namespace tests;
 
+use \PHPUnit_Framework_TestCase;
+
 use Framework\Application;
 
-class ApplicationTest extends \PHPUnit_Framework_TestCase
+class ApplicationTest extends PHPUnit_Framework_TestCase
 {
     public function testCreateApplicationShouldCreateInstanceOnlyOnce()
     {

@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL);
 
-include '../Autoloader/IAutoLoader.php';
+include '../CoreInterfaces/IAutoLoader.php';
 include '../Autoloader/AutoLoader.php';
 
 use AutoLoader\AutoLoader;
@@ -13,4 +13,4 @@ $autoLoader = new AutoLoader(array(
     'Framework' => '{root}'
 ));
 
-$autoLoader->addAliases(array('root'=>'../'));
+$autoLoader->addAliases(array('root'=>'..'));
