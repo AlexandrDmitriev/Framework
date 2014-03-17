@@ -4,7 +4,7 @@ namespace Framework;
 
 abstract class BaseApplication
 {
-    private static $instance = null;
+    protected static $instance = null;
 
     protected $configs;
 
@@ -13,14 +13,18 @@ abstract class BaseApplication
         $this->configs = $configs;
     }
 
-    final public static function getInstance()
+    public static function getInstance($config = null)
     {
-        if (self::$instance === null) {
-            self::$instance = new static();
+        if (static::$instance === null) {
+            static::$instance = new static($config);
+            static::$instance->run();
         }
 
-        return self::$instance;
+        return static::$instance;
     }
 
-    abstract public function run();
+    protected function run()
+    {
+
+    }
 }
