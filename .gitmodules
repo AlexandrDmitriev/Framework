@@ -10,3 +10,6 @@
 [submodule "CoreInterfaces"]
 	path = CoreInterfaces
 	url = git@github.com:AlexandrDmitriev/CoreInterfaces.git
+[submodule "Router"]
+	path = Router
+	url = git@github.com:AlexandrDmitriev/Router.git
